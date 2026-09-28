@@ -9,9 +9,9 @@
   --text: #fafafa;
   --muted: #b3b3b3;
   --faint: #8a8a8a;
-  --accent: #22c55e;
-  --accent-strong: #4ade80;
-  --accent-ink: #04140a;
+  --accent: #8b5cf6;
+  --accent-strong: #a78bfa;
+  --accent-ink: #17082e;
   --radius: 12px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
@@ -487,7 +487,7 @@ a.card:hover { border-color: rgba(255, 255, 255, 0.22); text-decoration: none; t
 }
 .doc-graph a.node:hover rect, .doc-graph a.node:focus-visible rect { stroke: var(--accent-strong); }
 .doc-graph a.node:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.doc-graph .node-center rect { stroke: rgba(34, 197, 94, 0.5); }
+.doc-graph .node-center rect { stroke: rgba(139, 92, 246, 0.55); }
 
 /* ---------- reveal ---------- */
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.5s ease, transform 0.5s ease; }
