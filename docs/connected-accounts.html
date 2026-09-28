@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connected Accounts — ShowAt Docs</title>
+  <meta name="description" content="Connected accounts on ShowAt: linking GitHub, LeetCode, Kaggle, HackerRank, and LinkedIn, and what activity syncs from each.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "../assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html"><img src="../assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="docs-sidebar">Docs menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="sidebar" id="docs-sidebar" aria-label="Documentation sections">
+      <nav aria-label="Documentation">
+        <div class="nav-group"><span>Getting Started</span><ul>
+          <li><a data-slug="introduction" href="introduction.html">Introduction</a></li>
+          <li><a data-slug="what-is-showat" href="what-is-showat.html">What is ShowAt?</a></li>
+          <li><a data-slug="how-showat-works" href="how-showat-works.html">How ShowAt Works</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Your Identity</span><ul>
+          <li><a data-slug="profile" href="profile.html">Profile</a></li>
+          <li><a data-slug="techy" href="techy.html">Techy</a></li>
+          <li><a data-slug="connected-accounts" href="connected-accounts.html">Connected Accounts</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Building</span><ul>
+          <li><a data-slug="projects" href="projects.html">Projects</a></li>
+          <li><a data-slug="project-progress" href="project-progress.html">Progress</a></li>
+          <li><a data-slug="milestones" href="milestones.html">Milestones</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Community</span><ul>
+          <li><a data-slug="community" href="community.html">Community</a></li>
+          <li><a data-slug="tools" href="tools.html">Tools</a></li>
+          <li><a data-slug="resources" href="resources.html">Resources</a></li>
+          <li><a data-slug="messages" href="messages.html">Messages</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Other</span><ul>
+          <li><a data-slug="faq" href="faq.html">FAQ</a></li>
+          <li><a data-slug="troubleshooting" href="troubleshooting.html">Troubleshooting</a></li>
+        </ul></div>
+      </nav>
+    </aside>
+
+    <main id="main" class="article" data-article>
+      <p class="eyebrow">Your Identity</p>
+      <h1>Connected Accounts</h1>
+      <p class="lede">Link your technical platforms so your public activity appears on your Techy canvas.</p>
+
+      <h2 id="linking">Linking a platform</h2>
+      <ol class="steps">
+        <li><strong>Paste your profile URL</strong> in the Links section (for example <code>https://github.com/your-name</code>) and save.</li>
+        <li><strong>Press Link</strong> in Connected Accounts for that provider.</li>
+        <li><strong>Open your Techy page.</strong> Synced stats appear as streak nodes on the canvas.</li>
+      </ol>
+
+      <h2 id="what-syncs">What syncs from each provider</h2>
+      <ul>
+        <li><strong>GitHub</strong> — public activity syncs from your link: live streak, public event counts, last active day, and a trailing ~90-day activity grid (the limit of GitHub's public, no-login API).</li>
+        <li><strong>LeetCode</strong> — public streak, submission totals, and a full-year activity grid from your public submission calendar.</li>
+        <li><strong>Kaggle</strong> — display-only link. Kaggle offers no public streak API, so no activity syncs.</li>
+        <li><strong>HackerRank</strong> — display-only link, for the same reason.</li>
+        <li><strong>LinkedIn</strong> — treated as a profile link.</li>
+      </ul>
+
+      <div class="note">
+        <p><strong>Private activity never syncs.</strong> Only public data is read — for example, your GitHub graph on ShowAt will not match github.com if most of your work is in private repositories. Stats refresh roughly every 12 hours.</p>
+      </div>
+
+      <div class="prev-next" data-prev-next></div>
+    </main>
+
+    <aside class="toc" data-toc aria-label="On this page">
+      <h2>On this page</h2>
+      <ul data-toc-list></ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../assets/config.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

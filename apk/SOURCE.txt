@@ -1,0 +1,13 @@
+ShowAt Docs — official APK provenance
+======================================
+File:    showat-1.0.0.apk (copied, byte-identical)
+Source:  apps/mobile/android/app/build/outputs/apk/release/app-release.apk
+Bytes:   49663472 (47.4 MB)
+Built:   2026-09-27 (Gradle app:assembleRelease, JS bundle embedded)
+Signing: release signing config (debug keystore) — installs as unknown-source APK
+Package: com.showat.app
+Version: 1.0.0 (versionCode 1), per apps/mobile/app.json
+
+To refresh after a new mobile release build:
+  copy the new app-release.apk over this file, keep the versioned name
+  in sync with app.json, and update assets/config.js + download.html.

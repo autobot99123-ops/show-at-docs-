@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download ShowAt — Official Android APK</title>
+  <meta name="description" content="Download the official ShowAt Android app. Standalone APK, version 1.0.0. Installation guide included.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "./assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="docs/index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <article class="article" data-article>
+        <p class="eyebrow reveal">Official release</p>
+        <h1 class="reveal">Download ShowAt</h1>
+        <p class="lede reveal">Get the ShowAt Android app.</p>
+
+        <div class="dl-panel reveal">
+          <div class="file-row">
+            <span aria-hidden="true">▸</span>
+            <span>showat-1.0.0.apk</span>
+          </div>
+          <div class="dl-meta">
+            <span>Version <strong data-config="version">1.0.0</strong></span>
+            <span>Size <strong data-config="sizeLabel">47.4 MB</strong></span>
+            <span><strong>Android</strong></span>
+            <span><strong>Standalone APK</strong></span>
+            <span>Package <strong data-config="package">com.showat.app</strong></span>
+          </div>
+          <div class="cta-row" style="margin-top:0">
+            <a class="btn btn-primary" href="apk/showat-1.0.0.apk" download="showat-1.0.0.apk">Download APK</a>
+          </div>
+          <p style="margin:0;font-size:0.9rem;color:var(--color-muted,var(--muted))">The file downloads directly from this site. Nothing installs automatically.</p>
+        </div>
+
+        <h2 id="install">Installation</h2>
+        <ol class="steps">
+          <li><strong>Download the APK</strong> using the button above.</li>
+          <li><strong>Open the downloaded APK</strong> from your notifications or file manager.</li>
+          <li><strong>If Android asks, allow installation</strong> from the relevant source (browser or file manager).</li>
+          <li><strong>Install ShowAt.</strong></li>
+          <li><strong>Open ShowAt</strong> and create your account or log in.</li>
+        </ol>
+
+        <div class="note">
+          <p><strong>Blocked install?</strong> Android blocks unknown-source apps by default. The allow prompt appears during installation — approve it once for your browser or file manager. See <a href="docs/troubleshooting.html">Troubleshooting</a> for details.</p>
+        </div>
+
+        <h2 id="details">Release details</h2>
+        <ul>
+          <li><strong>Format:</strong> standalone APK — no Expo, Metro, laptop, QR code, or development server required.</li>
+          <li><strong>Version:</strong> <span data-config="version">1.0.0</span> (version code <span data-config="versionCode">1</span>).</li>
+          <li><strong>Source:</strong> built from the official ShowAt mobile codebase (<code>assembleRelease</code>, JS bundle embedded, verified on-device).</li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="docs/index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/config.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>

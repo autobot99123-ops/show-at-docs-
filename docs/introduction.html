@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction — ShowAt Docs</title>
+  <meta name="description" content="Introduction to the official ShowAt documentation: what it covers and how to use it.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "../assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html"><img src="../assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="docs-sidebar">Docs menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="sidebar" id="docs-sidebar" aria-label="Documentation sections">
+      <nav aria-label="Documentation">
+        <div class="nav-group"><span>Getting Started</span><ul>
+          <li><a data-slug="introduction" href="introduction.html">Introduction</a></li>
+          <li><a data-slug="what-is-showat" href="what-is-showat.html">What is ShowAt?</a></li>
+          <li><a data-slug="how-showat-works" href="how-showat-works.html">How ShowAt Works</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Your Identity</span><ul>
+          <li><a data-slug="profile" href="profile.html">Profile</a></li>
+          <li><a data-slug="techy" href="techy.html">Techy</a></li>
+          <li><a data-slug="connected-accounts" href="connected-accounts.html">Connected Accounts</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Building</span><ul>
+          <li><a data-slug="projects" href="projects.html">Projects</a></li>
+          <li><a data-slug="project-progress" href="project-progress.html">Progress</a></li>
+          <li><a data-slug="milestones" href="milestones.html">Milestones</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Community</span><ul>
+          <li><a data-slug="community" href="community.html">Community</a></li>
+          <li><a data-slug="tools" href="tools.html">Tools</a></li>
+          <li><a data-slug="resources" href="resources.html">Resources</a></li>
+          <li><a data-slug="messages" href="messages.html">Messages</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Other</span><ul>
+          <li><a data-slug="faq" href="faq.html">FAQ</a></li>
+          <li><a data-slug="troubleshooting" href="troubleshooting.html">Troubleshooting</a></li>
+        </ul></div>
+      </nav>
+    </aside>
+
+    <main id="main" class="article" data-article>
+      <p class="eyebrow">Getting Started</p>
+      <h1>Introduction</h1>
+      <p class="lede">This is the official documentation for ShowAt. It explains what ShowAt is, how it works, and how to use each part of it.</p>
+
+      <h2 id="what-this-site-is">What this site is</h2>
+      <p>This website is documentation only. It describes the ShowAt product, documents its existing features, and answers common questions.</p>
+      <p>There are no accounts, feeds, messages, or settings here.</p>
+
+      <h2 id="how-to-use">How to use these docs</h2>
+      <ul>
+        <li><strong>New to ShowAt?</strong> Start with <a href="what-is-showat.html">What is ShowAt?</a> and <a href="how-showat-works.html">How ShowAt Works</a>.</li>
+        <li><strong>Setting up your presence?</strong> Read <a href="profile.html">Profile</a>, <a href="techy.html">Techy</a>, and <a href="connected-accounts.html">Connected Accounts</a>.</li>
+        <li><strong>Showcasing work?</strong> Read <a href="projects.html">Projects</a>, <a href="project-progress.html">Progress</a>, and <a href="milestones.html">Milestones</a>.</li>
+        <li><strong>Meeting people?</strong> Read <a href="community.html">Community</a>, <a href="tools.html">Tools</a>, <a href="resources.html">Resources</a>, and <a href="messages.html">Messages</a>.</li>
+        <li><strong>Stuck?</strong> See <a href="faq.html">FAQ</a> and <a href="troubleshooting.html">Troubleshooting</a>.</li>
+      </ul>
+
+      <h2 id="accuracy">A note on accuracy</h2>
+      <p>These docs describe the ShowAt implementation as it exists today. They do not include planned features, statistics, testimonials, or partnerships. If something here disagrees with the app, the app is the source of truth — and the docs should be updated.</p>
+
+      <div class="prev-next" data-prev-next></div>
+    </main>
+
+    <aside class="toc" data-toc aria-label="On this page">
+      <h2>On this page</h2>
+      <ul data-toc-list></ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../assets/config.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

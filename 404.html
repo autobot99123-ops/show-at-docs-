@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found — ShowAt Documentation</title>
+  <meta name="description" content="This documentation page does not exist.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "./assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="docs/index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <article class="article">
+        <p class="eyebrow">404</p>
+        <h1>Page not found</h1>
+        <p class="lede">This documentation page does not exist or was moved.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="docs/index.html">Documentation home</a>
+          <a class="btn btn-ghost" href="index.html">ShowAt overview</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="docs/index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/config.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>

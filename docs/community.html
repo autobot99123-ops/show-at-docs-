@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community — ShowAt Docs</title>
+  <meta name="description" content="The ShowAt student community: discovering students, posts, attaching, and messaging.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "../assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html"><img src="../assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="docs-sidebar">Docs menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="sidebar" id="docs-sidebar" aria-label="Documentation sections">
+      <nav aria-label="Documentation">
+        <div class="nav-group"><span>Getting Started</span><ul>
+          <li><a data-slug="introduction" href="introduction.html">Introduction</a></li>
+          <li><a data-slug="what-is-showat" href="what-is-showat.html">What is ShowAt?</a></li>
+          <li><a data-slug="how-showat-works" href="how-showat-works.html">How ShowAt Works</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Your Identity</span><ul>
+          <li><a data-slug="profile" href="profile.html">Profile</a></li>
+          <li><a data-slug="techy" href="techy.html">Techy</a></li>
+          <li><a data-slug="connected-accounts" href="connected-accounts.html">Connected Accounts</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Building</span><ul>
+          <li><a data-slug="projects" href="projects.html">Projects</a></li>
+          <li><a data-slug="project-progress" href="project-progress.html">Progress</a></li>
+          <li><a data-slug="milestones" href="milestones.html">Milestones</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Community</span><ul>
+          <li><a data-slug="community" href="community.html">Community</a></li>
+          <li><a data-slug="tools" href="tools.html">Tools</a></li>
+          <li><a data-slug="resources" href="resources.html">Resources</a></li>
+          <li><a data-slug="messages" href="messages.html">Messages</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Other</span><ul>
+          <li><a data-slug="faq" href="faq.html">FAQ</a></li>
+          <li><a data-slug="troubleshooting" href="troubleshooting.html">Troubleshooting</a></li>
+        </ul></div>
+      </nav>
+    </aside>
+
+    <main id="main" class="article" data-article>
+      <p class="eyebrow">Community</p>
+      <h1>Community</h1>
+      <p class="lede">Discover students, follow their work, share your own — and talk directly.</p>
+
+      <h2 id="discover">Discovering students</h2>
+      <p>Explore surfaces students, posts, projects, <a href="tools.html">tools</a>, and <a href="resources.html">resources</a>. Visiting a student's username opens their public profile with posts, projects, Techy, and community counts.</p>
+
+      <h2 id="posts">Posts</h2>
+      <p>Posts are short updates in two flavors: <strong>course completions</strong> (what you finished learning) and <strong>learning updates</strong> (what you are learning or building). Posts appear on your profile, in feeds, and in your Techy activity.</p>
+
+      <h2 id="attach">Attaching</h2>
+      <p>Attach to students whose work inspires you. Your profile shows <strong>attaches</strong> (students attached to you) and <strong>attached</strong> (students you attached to). Detaching removes the connection.</p>
+
+      <h2 id="messages">Messaging</h2>
+      <p>Message collaborators directly from a profile or the messages area — no external app needed. See <a href="messages.html">Messages</a> for conversations and privacy.</p>
+
+      <div class="prev-next" data-prev-next></div>
+    </main>
+
+    <aside class="toc" data-toc aria-label="On this page">
+      <h2>On this page</h2>
+      <ul data-toc-list></ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../assets/config.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

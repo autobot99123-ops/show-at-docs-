@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShowAt Docs — Documentation Home</title>
+  <meta name="description" content="ShowAt documentation home. Guides for profile, Techy, connected accounts, projects, community, tools, resources, messages, FAQ, and troubleshooting.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "../assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html"><img src="../assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="docs-sidebar">Docs menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="sidebar" id="docs-sidebar" aria-label="Documentation sections">
+      <nav aria-label="Documentation">
+        <div class="nav-group"><span>Getting Started</span><ul>
+          <li><a data-slug="introduction" href="introduction.html">Introduction</a></li>
+          <li><a data-slug="what-is-showat" href="what-is-showat.html">What is ShowAt?</a></li>
+          <li><a data-slug="how-showat-works" href="how-showat-works.html">How ShowAt Works</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Your Identity</span><ul>
+          <li><a data-slug="profile" href="profile.html">Profile</a></li>
+          <li><a data-slug="techy" href="techy.html">Techy</a></li>
+          <li><a data-slug="connected-accounts" href="connected-accounts.html">Connected Accounts</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Building</span><ul>
+          <li><a data-slug="projects" href="projects.html">Projects</a></li>
+          <li><a data-slug="project-progress" href="project-progress.html">Progress</a></li>
+          <li><a data-slug="milestones" href="milestones.html">Milestones</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Community</span><ul>
+          <li><a data-slug="community" href="community.html">Community</a></li>
+          <li><a data-slug="tools" href="tools.html">Tools</a></li>
+          <li><a data-slug="resources" href="resources.html">Resources</a></li>
+          <li><a data-slug="messages" href="messages.html">Messages</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Other</span><ul>
+          <li><a data-slug="faq" href="faq.html">FAQ</a></li>
+          <li><a data-slug="troubleshooting" href="troubleshooting.html">Troubleshooting</a></li>
+        </ul></div>
+      </nav>
+    </aside>
+
+    <main id="main" class="article" data-article>
+      <p class="eyebrow">ShowAt Docs</p>
+      <h1>Documentation</h1>
+      <p class="lede">Everything you need to understand ShowAt.</p>
+
+      <h2 id="getting-started">Getting Started</h2>
+      <ul>
+        <li><a href="introduction.html"><strong>Introduction</strong></a> — what this documentation covers.</li>
+        <li><a href="what-is-showat.html"><strong>What is ShowAt?</strong></a> — the product in simple language.</li>
+        <li><a href="how-showat-works.html"><strong>How ShowAt Works</strong></a> — how the pieces fit together.</li>
+      </ul>
+
+      <h2 id="identity">Your Identity</h2>
+      <ul>
+        <li><a href="profile.html"><strong>Profile</strong></a> — student identity, posts, projects, Techy, community connections.</li>
+        <li><a href="techy.html"><strong>Techy</strong></a> — technical identity and the Techy canvas.</li>
+        <li><a href="connected-accounts.html"><strong>Connected Accounts</strong></a> — GitHub, LeetCode, Kaggle, HackerRank, LinkedIn.</li>
+      </ul>
+
+      <h2 id="building">Building</h2>
+      <ul>
+        <li><a href="projects.html"><strong>Projects</strong></a> — creation, lifecycle, and presentation.</li>
+        <li><a href="project-progress.html"><strong>Progress</strong></a> — milestone-derived progress.</li>
+        <li><a href="milestones.html"><strong>Milestones</strong></a> — marking what you built and when.</li>
+      </ul>
+
+      <h2 id="community">Community</h2>
+      <ul>
+        <li><a href="community.html"><strong>Community</strong></a> — discovering students, attaching, posts.</li>
+        <li><a href="tools.html"><strong>Tools</strong></a> — discovering and submitting student tools.</li>
+        <li><a href="resources.html"><strong>Resources</strong></a> — guides and learning resources.</li>
+        <li><a href="messages.html"><strong>Messages</strong></a> — direct messaging and privacy.</li>
+      </ul>
+
+      <h2 id="help">Other</h2>
+      <ul>
+        <li><a href="faq.html"><strong>FAQ</strong></a> — common questions.</li>
+        <li><a href="troubleshooting.html"><strong>Troubleshooting</strong></a> — fixing common problems.</li>
+      </ul>
+
+      <div class="note">
+        <p><strong>About this site:</strong> this site is documentation only — guides for understanding and using ShowAt.</p>
+      </div>
+    </main>
+
+    <aside class="toc" data-toc aria-label="On this page">
+      <h2>On this page</h2>
+      <ul data-toc-list></ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../assets/config.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

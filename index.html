@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShowAt Documentation — What is ShowAt?</title>
+  <meta name="description" content="Official ShowAt documentation. Understand the student platform for technical identity, projects, skills, community, tools, and messaging. Download the Android APK.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "./assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="docs/index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">ShowAt · Official Documentation</p>
+        <h1 class="reveal brand-giant">SHOWAT<span class="dot">.</span></h1>
+        <p class="doc-word reveal">Documentation</p>
+        <p class="lede reveal">Everything you need to understand how ShowAt works.</p>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="docs/index.html">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 class="reveal">Explore the docs</h2>
+        <p class="sub reveal">Start anywhere — every node is a real guide.</p>
+        <svg class="doc-graph reveal" viewBox="0 0 640 360" role="img" aria-label="Documentation map: ShowAt connected to Introduction, Techy, Projects, Community, and Download guides">
+          <line x1="320" y1="180" x2="110" y2="84" />
+          <line x1="320" y1="180" x2="530" y2="84" />
+          <line x1="320" y1="180" x2="110" y2="276" />
+          <line x1="320" y1="180" x2="530" y2="276" />
+          <a class="node" href="docs/introduction.html">
+            <rect x="35" y="60" width="150" height="48" rx="10" />
+            <text x="110" y="80">INTRO</text>
+            <text class="sub" x="110" y="96">start here</text>
+          </a>
+          <a class="node" href="docs/techy.html">
+            <rect x="455" y="60" width="150" height="48" rx="10" />
+            <text x="530" y="80">TECHY</text>
+            <text class="sub" x="530" y="96">identity canvas</text>
+          </a>
+          <a class="node node-center" href="docs/index.html">
+            <rect x="245" y="153" width="150" height="54" rx="10" />
+            <text x="320" y="176">SHOWAT</text>
+            <text class="sub" x="320" y="193">documentation</text>
+          </a>
+          <a class="node" href="docs/projects.html">
+            <rect x="35" y="252" width="150" height="48" rx="10" />
+            <text x="110" y="272">PROJECTS</text>
+            <text class="sub" x="110" y="288">build + milestones</text>
+          </a>
+          <a class="node" href="docs/community.html">
+            <rect x="455" y="252" width="150" height="48" rx="10" />
+            <text x="530" y="272">COMMUNITY</text>
+            <text class="sub" x="530" y="288">students + messages</text>
+          </a>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 class="reveal">What is ShowAt?</h2>
+        <p class="sub reveal">ShowAt is a student-focused platform for technical identity: projects, skills, achievements, learning, student community, tools, resources, and messaging — presented together in one place.</p>
+        <div class="card-grid">
+          <a class="card reveal" href="docs/what-is-showat.html">
+            <h3>What is ShowAt?</h3>
+            <p>The product in simple language, and how it relates to GitHub, LeetCode, and other platforms.</p>
+          </a>
+          <a class="card reveal" href="docs/how-showat-works.html">
+            <h3>How ShowAt works</h3>
+            <p>Profile, Techy, projects, and community — how the pieces fit together.</p>
+          </a>
+          <a class="card reveal" href="docs/techy.html">
+            <h3>Techy</h3>
+            <p>Your technical identity: skills, connected platforms, and the Techy canvas.</p>
+          </a>
+          <a class="card reveal" href="docs/projects.html">
+            <h3>Projects</h3>
+            <p>Create projects, track milestones, and present your work.</p>
+          </a>
+          <a class="card reveal" href="docs/community.html">
+            <h3>Community</h3>
+            <p>Discover students, attach, share posts, tools, and resources.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 class="reveal">Documentation</h2>
+        <p class="sub reveal">Short guides for every part of ShowAt. Start anywhere.</p>
+        <div class="card-grid">
+          <a class="card reveal" href="docs/index.html">
+            <h3>Getting started</h3>
+            <p>Introduction, what ShowAt is, and how it works.</p>
+          </a>
+          <a class="card reveal" href="docs/profile.html">
+            <h3>Your identity</h3>
+            <p>Profile, Techy, and connected accounts.</p>
+          </a>
+          <a class="card reveal" href="docs/project-progress.html">
+            <h3>Building</h3>
+            <p>Projects, progress, and milestones.</p>
+          </a>
+          <a class="card reveal" href="docs/faq.html">
+            <h3>Help</h3>
+            <p>FAQ and troubleshooting.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="docs/index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/config.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>

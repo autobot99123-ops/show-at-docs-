@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting — ShowAt Docs</title>
+  <meta name="description" content="Fix common ShowAt problems: APK install blocks, login, streaks not updating, links not syncing, and missing content.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-field" aria-hidden="true"></canvas>
+  <script type="module">
+    import { bootField } from "../assets/particles/boot.js";
+    bootField(document.getElementById("bg-field"));
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../index.html"><img src="../assets/logo.png" alt="ShowAt logo"><span>SHOWAT</span></a>
+      <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="docs-sidebar">Docs menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="sidebar" id="docs-sidebar" aria-label="Documentation sections">
+      <nav aria-label="Documentation">
+        <div class="nav-group"><span>Getting Started</span><ul>
+          <li><a data-slug="introduction" href="introduction.html">Introduction</a></li>
+          <li><a data-slug="what-is-showat" href="what-is-showat.html">What is ShowAt?</a></li>
+          <li><a data-slug="how-showat-works" href="how-showat-works.html">How ShowAt Works</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Your Identity</span><ul>
+          <li><a data-slug="profile" href="profile.html">Profile</a></li>
+          <li><a data-slug="techy" href="techy.html">Techy</a></li>
+          <li><a data-slug="connected-accounts" href="connected-accounts.html">Connected Accounts</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Building</span><ul>
+          <li><a data-slug="projects" href="projects.html">Projects</a></li>
+          <li><a data-slug="project-progress" href="project-progress.html">Progress</a></li>
+          <li><a data-slug="milestones" href="milestones.html">Milestones</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Community</span><ul>
+          <li><a data-slug="community" href="community.html">Community</a></li>
+          <li><a data-slug="tools" href="tools.html">Tools</a></li>
+          <li><a data-slug="resources" href="resources.html">Resources</a></li>
+          <li><a data-slug="messages" href="messages.html">Messages</a></li>
+        </ul></div>
+        <div class="nav-group"><span>Other</span><ul>
+          <li><a data-slug="faq" href="faq.html">FAQ</a></li>
+          <li><a data-slug="troubleshooting" href="troubleshooting.html">Troubleshooting</a></li>
+        </ul></div>
+      </nav>
+    </aside>
+
+    <main id="main" class="article" data-article>
+      <p class="eyebrow">Other</p>
+      <h1>Troubleshooting</h1>
+      <p class="lede">Fixes for the most common ShowAt problems.</p>
+
+      <h2 id="link-stuck">Provider shows "Not connected" after pasting a link</h2>
+      <ol class="steps">
+        <li>Type the profile URL in the Links section first (for example <code>https://github.com/your-name</code>).</li>
+        <li>Press <strong>Save</strong> so the URL is stored.</li>
+        <li>Press <strong>Link</strong> in Connected Accounts for that provider.</li>
+        <li>Open your Techy page to trigger a sync.</li>
+      </ol>
+
+      <h2 id="streak-empty">Streak node shows "linked" but no count</h2>
+      <ul>
+        <li>Stats refresh roughly every 12 hours — linking syncs immediately, otherwise open your Techy page and wait for the refresh.</li>
+        <li>Only <strong>public</strong> activity counts. Private work never appears.</li>
+        <li>A streak needs consecutive active days ending today or yesterday — one quiet day resets it to an honest zero.</li>
+      </ul>
+
+      <h2 id="missing">My post, project, or tool doesn't appear</h2>
+      <ul>
+        <li><strong>Tools and resources:</strong> only approved (published) items are listed — pending ones wait for review. See <a href="tools.html">Tools</a>.</li>
+        <li><strong>Projects:</strong> check the project saved successfully and you are viewing the right profile.</li>
+        <li><strong>Anything else:</strong> pull to refresh; check you are logged in as the account that created it.</li>
+      </ul>
+
+      <div class="prev-next" data-prev-next></div>
+    </main>
+
+    <aside class="toc" data-toc aria-label="On this page">
+      <h2>On this page</h2>
+      <ul data-toc-list></ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>ShowAt Documentation · <span data-year>2026</span></span>
+      <nav aria-label="Footer">
+        <a href="index.html">Docs</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../assets/config.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
